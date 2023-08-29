@@ -16,3 +16,13 @@ How it works:
 ```
 alias libreoffice="flatpak run org.libreoffice.LibreOffice"
 ```
+
+### Edge cases where problems can occur
+- you have two apps with the same name but different origin, only one app is aliased
+
+```
+org.origin1.app
+org.origin2.app
+```
+
+- you have an app that is called the same in your path, for example `firefox` and the `Firefox Flatpak`
